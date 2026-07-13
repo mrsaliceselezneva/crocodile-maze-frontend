@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 
 function App() {
-    const [backendMessage, setBackendMessage] = useState("");
+    const [gameInfo, setGameInfo] = useState(null);
 
     useEffect(() => {
-        fetch("/api/health/")
+        fetch("/api/game-info/")
             .then((response) => response.json())
             .then((data) => {
-                setBackendMessage(data.message);
+                setGameInfo(data);
             });
     }, []);
 
@@ -19,7 +19,10 @@ function App() {
             <hr />
 
             <p>Ответ backend:</p>
-            <strong>{backendMessage}</strong>
+            <div>
+                <strong>{gameInfo?.name}</strong>
+                <div>{gameInfo?.message}</div>
+            </div>
         </main>
     );
 }
