@@ -1,0 +1,25 @@
+.main-header {
+    width: 100%;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border);
+}
+
+.main-header__inner,
+.main-content {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-inline: 24px;
+}
+
+.main-header__inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 64px;
+}
+
+.main-content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
