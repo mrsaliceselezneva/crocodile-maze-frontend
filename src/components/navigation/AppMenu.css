@@ -1,0 +1,15 @@
+.app-menu-button {
+    color: var(--text-h) !important;
+    font-size: 22px;
+}
+
+.app-menu-button .anticon {
+    color: inherit;
+    font-size: 22px;
+}
+
+.app-menu-button:hover,
+.app-menu-button:focus {
+    color: var(--accent) !important;
+    background: transparent !important;
+}
